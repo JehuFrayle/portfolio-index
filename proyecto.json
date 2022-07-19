@@ -1,0 +1,12 @@
+[{
+    "name": "example-project",
+    "imageURL": "../src/booksample.jpg",
+    "description": "Hace mucho que queria hacer esto",
+    "technologies": "JavaScript, React"
+},
+{
+    "name": "example-project2",
+    "imageURL": "../src/booksample.jpg",
+    "description": "Hace no tanto que queria hacer esto",
+    "technologies": "TypeScript, Vue"
+}]
