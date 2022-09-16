@@ -1,16 +1,83 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jehú Frayle - Portfolio</title>
+    <title>Jehú Frayle</title>
 </head>
-<body>
-    <header>
-        <h1>Here you can checkout my projects</h1>
+
+<body class="bg-gradient-to-r from-violet-900 to-purple-900 text-slate-100">
+    <header class="w-full h-auto bg-gradient-to-r from-violet-800 to-purple-800 px-2 flex justify-between fixed top-0">
+        <a href="https:jehufrayle.com" class="h-full my-auto p-2 bg-slate-800">Jehú Frayle</a>
+        <nav id="NavBar"
+            class="lg:flex lg:w-auto lg:static lg:flex-row lg:bg-transparent 
+         bg-red-500 rounded-sm divide-y divide-dotted lg:divide-none flex-col fixed top-16 left-1/4 align-center w-1/2 text-center hidden">
+            <a class="p-2 w-auto lg:w-32 lg:h-auto h-16 block hover:bg-violet-600" href="#Home">Home</a>
+            <a class="p-2 w-auto lg:w-32 lg:h-auto h-16 block hover:bg-violet-600" href="#About">About me</a>
+            <a class="p-2 w-auto lg:w-32 lg:h-auto h-16 block hover:bg-violet-600" href="#Projects">Projects</a>
+            <a class="p-2 w-auto lg:w-32 lg:h-auto h-16 block hover:bg-violet-600" href="#Contact">Contact</a>
+        </nav>
+        <button id="burger" class="w-auto p-2 my-auto align-middle lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                style="fill: azure">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </svg>
+        </button>
     </header>
-    <main id="App"></main>
-    <footer>Made with love by <a href="https://jehufrayle.com"> Jehú </a></footer>
+    <main class="mt-8 mx-4 lg:mx-8">
+        <section id="Home" class="flex flex-col justify-around w-full h-auto text-center p-4 md:flex-row">
+
+            <div class="relative w-32 h-32 lg:w-64 lg:h-64 mx-auto my-2 z-[-1]">
+                <div class="absolute w-full h-full inset-0 rounded-full bg-sky-500 blur-md"></div>
+                <img src="<%=require('../src/assets/-1_orig.jpg')%>" alt="Jehú Frayle"
+                    class="relative w-full h-full rounded-full outline outline-sky-500 outline-offset-2" />
+            </div>
+            <div class="flex flex-col space-y-3 m-auto">
+                <p class="text-m text-left">Hello there,</p>
+                <h1 class="text-6xl font-bold italic">This is Jehú Frayle</h1>
+                <p class="text-lg text-center tracking-widest w-full mx-auto">JavaScript Developer</p>
+            </div>
+        </section>
+        <hr class="">
+        <section id="About" class="text-md mx-auto space-y-4 p-4">
+            <h2 class="text-xl text-center my-2">About me</h2>
+            <p>I am Jehú Frayle, an IT Student with proficiency in web development.</p>
+            <p>I build functional and reliable websites and applications using technologies as TypeScript, Reactjs and
+                Webpack.
+                And, of course, I can use the main languages of the web HTML, CSS and JavaScript in their latest
+                versions.
+            </p>
+            <p>I'm currently looking for an opportunity to work in challenging projects to improve my skills
+                and contribute to a team.
+            </p>
+            <p>Are you interested in work with me?</p>
+            <button type="button"
+                class="block rounded-lg bg-yellow-600 p-2 mx-auto my-4 justify-center shadow-md shadow-yellow-400/40">Let's
+                talk!</button>
+        </section>
+        <section id="Projects">
+            <h2 class="text-xl text-center my-2">Projects</h2>
+            <article>
+                <p>Titulo del proyecto</p>
+                <img src="" alt="Proyecto X">
+                <div>Descripcion</div>
+            </article>
+        </section>
+        <section id="Contact">
+            <div>
+                Formulario de contacto
+            </div>
+            <div>
+                <a>GitHub</a>
+                <a>LinkedIn</a>
+                <a>Blog</a>
+                <a>Twitter</a>
+            </div>
+        </section>
+    </main>
+    <footer>Made with love by<a href="https://jehufrayle.com"> Jehú </a>💜</footer>
 </body>
+
 </html>

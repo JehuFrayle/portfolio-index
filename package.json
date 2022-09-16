@@ -3,26 +3,37 @@
   "version": "1.0.0",
   "description": "This project is the frontend for my portfolio. I will automatically update every time I upload a new project.",
   "main": "index.js",
-  "keywords": ["typescript", "webpack"],
+  "keywords": [
+    "typescript",
+    "webpack"
+  ],
   "author": "Jehu Frayle <jehufrayle@gmail.com>",
   "license": "ISC",
   "scripts": {
     "clean": "rm dist/bundle.js",
     "build-dev": "webpack --mode development",
-    "build-prod": "webpack --mode production"
+    "build-prod": "webpack --mode production",
+    "start": "webpack serve --open --hot"
   },
   "devDependencies": {
-    "webpack": "^5.73.0",
-    "webpack-cli": "^4.10.0",
-    "typescript": "^4.7.4",
-    "ts-loader": "^9.3.1",
-    "babel-loader": "^8.2.5",
     "@babel/core": "^7.18.9",
     "@babel/preset-env": "^7.18.9",
+    "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
-    "style-loader": "^3.3.1",
     "html-webpack-plugin": "^5.5.0",
+    "postcss-cli": "^10.0.0",
+    "postcss-loader": "^7.0.1",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.1.8",
+    "ts-loader": "^9.3.1",
+    "typescript": "^4.7.4",
     "url-loader": "^4.1.1",
-    "mini-css-extract-plugin": "^2.6.1"
+    "webpack": "^5.73.0",
+    "webpack-cli": "^4.10.0",
+    "webpack-dev-server": "^4.9.3"
+  },
+  "dependencies": {
+    "@babel/plugin-transform-runtime": "^7.18.10",
+    "autoprefixer": "^10.4.9"
   }
 }

@@ -1,7 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 const config = {
   entry: './src/index.ts',
@@ -9,6 +8,7 @@ const config = {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js'
   },
+  mode: "development", 
   module: {
     rules: [
       {
@@ -24,20 +24,19 @@ const config = {
       {
         test: /\.css$/,
         use: [
-          MiniCssExtractPlugin.loader,
-          'css-loader'
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 1
+            }
+          },
+          'postcss-loader'
         ]
       },
       {
-        test: /\.png$/,
-        use: [
-          {
-            loader: 'url-loader',
-            options: {
-              mimetype: 'image/png'
-            }
-          }
-        ]
+        test: /\.(png|svg|jpg|gif)$/,
+        type: 'asset'
       }
     ]
   },
@@ -46,15 +45,23 @@ const config = {
       '.tsx',
       '.ts',
       '.js'
-    ]
+    ],
+    alias: {
+      '@assets': path.resolve(__dirname, 'src/assets')
+    }
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
       filename: 'index.html',
     }),
-    new MiniCssExtractPlugin()
-  ]
+  ],
+  devServer: {
+    static: path.join(__dirname, 'dist'),
+    compress: true,
+    port: 3060,
+    historyApiFallback: true,
+}
 };
 
 module.exports = config;

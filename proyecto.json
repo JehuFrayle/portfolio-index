@@ -1,12 +1,18 @@
 [{
     "name": "example-project",
-    "imageURL": "../src/booksample.jpg",
+    "imageURL": "https://serokell.io/files/0u/0ufu1q21.js-ts.jpg",
     "description": "Hace mucho que queria hacer esto",
-    "technologies": "JavaScript, React"
+    "technologies": ["JavaScript", "React"]
 },
 {
     "name": "example-project2",
-    "imageURL": "../src/booksample.jpg",
+    "imageURL": "https://serokell.io/files/0u/0ufu1q21.js-ts.jpg",
     "description": "Hace no tanto que queria hacer esto",
-    "technologies": "TypeScript, Vue"
+    "technologies": ["TypeScript", "Vue"]
+},
+{
+    "name": "example-project3",
+    "imageURL": "https://serokell.io/files/0u/0ufu1q21.js-ts.jpg",
+    "description": "Queria hacer esto",
+    "technologies": ["TypeScript", "Angular (si claro jaja)"]
 }]
