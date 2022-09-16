@@ -12,3 +12,9 @@ const nav = document.querySelector('#NavBar');
 burger?.addEventListener('click',()=>{
     nav?.classList.toggle('hidden')
 })
+nav?.addEventListener('click', (event)=>{
+    const anchor = event.target;
+     if(anchor instanceof Element && anchor.localName === 'a'){
+         nav?.classList.toggle('hidden')
+     }
+})
