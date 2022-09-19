@@ -9,7 +9,7 @@
 </head>
 
 <body class="bg-gradient-to-r from-violet-900 to-purple-900 text-slate-100">
-    <header class="w-full h-auto bg-gradient-to-r from-violet-800 to-purple-800 px-2 flex justify-between fixed top-0">
+    <header class="w-full h-auto bg-gradient-to-r from-violet-800 to-purple-800 px-2 flex justify-between fixed top-0 z-10">
         <a href="https:jehufrayle.com" class="h-full my-auto p-2 bg-slate-800">Jehú Frayle</a>
         <nav id="NavBar" class="lg:flex lg:w-auto lg:static lg:flex-row lg:bg-transparent lg:text-inherit lg:p-0
          backdrop-blur-sm bg-white/30 p-2 text-slate-900 rounded-sm divide-y divide-slate-800 divide-dotted lg:divide-none flex-col fixed top-16 left-16 align-center 
@@ -28,7 +28,7 @@
     <main class="mt-8 mx-4 lg:mx-8">
         <section id="Home" class="flex flex-col justify-around w-full h-auto text-center p-4 pt-10 md:flex-row">
 
-            <div class="relative w-32 h-32 lg:w-64 lg:h-64 mx-auto my-2 z-[-1]">
+            <div class="relative w-32 h-32 lg:w-64 lg:h-64 mx-auto my-2">
                 <div class="absolute w-full h-full inset-0 rounded-full bg-sky-500 blur-md"></div>
                 <img src="<%=require('../src/assets/-1_orig.jpg')%>" alt="Jehú Frayle"
                     class="relative w-full h-full rounded-full outline outline-sky-500 outline-offset-2" />
@@ -54,21 +54,20 @@
             </p>
             <p>Are you interested in work with me?</p>
             <button type="button"
-                class="block rounded-lg bg-yellow-600 p-2 mx-auto my-4 justify-center shadow-md shadow-yellow-400/40">Let's
-                talk!</button>
+                class="block rounded-lg bg-yellow-600 p-2 mx-auto my-4 justify-center shadow-md shadow-yellow-400/40
+                hover:scale-125 transition duration-400 ease-in-out">Let's
+                talk!
+            </button>
         </section>
-        <section id="Projects" class="pt-8">
+        <section id="Projects" class="p-2 pt-8 space-y-4">
             <h2 class="text-xl text-center my-2">Projects</h2>
-            <article>
-                <p>Titulo del proyecto</p>
-                <img src="" alt="Proyecto X">
-                <div>Descripcion</div>
-            </article>
+            <!-- Aquí van los proyectos con TS -->
+            <div id="ProjectsTS" class="p-2 w-full h-auto flex flex-wrap justify-center space-8"></div>
         </section>
-        <section id="Contact" class="">
-            <div>
+        <section id="Contact" class="mt-8">
+            <!-- <div>
                 Formulario de contacto
-            </div>
+            </div> -->
             <div class="flex w-full justify-evenly">
                 <a href="https://github.com/JehuFrayle" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -105,7 +104,7 @@
             </div>
         </section>
     </main>
-    <footer>Made with love by<a href="https://jehufrayle.com"> Jehú </a>💜</footer>
+    <footer class="w-full text-center mt-4 mb-2">Made with love by<a href="https://jehufrayle.com"> Jehú </a>💜</footer>
 </body>
 
 </html>

@@ -1,18 +1,35 @@
 [{
-    "name": "example-project",
+    "name": "This person didn't say that",
+    "url": "https://projects.jehufrayle.com/random-quotes",
     "imageURL": "https://serokell.io/files/0u/0ufu1q21.js-ts.jpg",
     "description": "Hace mucho que queria hacer esto",
     "technologies": ["JavaScript", "React"]
 },
 {
     "name": "example-project2",
+    "url": "https://projects.jehufrayle.com/random-quotes",
     "imageURL": "https://serokell.io/files/0u/0ufu1q21.js-ts.jpg",
     "description": "Hace no tanto que queria hacer esto",
     "technologies": ["TypeScript", "Vue"]
 },
 {
     "name": "example-project3",
+    "url": "https://projects.jehufrayle.com/random-quotes",
     "imageURL": "https://serokell.io/files/0u/0ufu1q21.js-ts.jpg",
     "description": "Queria hacer esto",
-    "technologies": ["TypeScript", "Angular (si claro jaja)"]
+    "technologies": ["TypeScript", "Angular"]
+},
+{
+    "name": "example-project3",
+    "url": "https://projects.jehufrayle.com/random-quotes",
+    "imageURL": "https://serokell.io/files/0u/0ufu1q21.js-ts.jpg",
+    "description": "Queria hacer esto",
+    "technologies": ["TypeScript", "Angular"]
+},
+{
+    "name": "example-project3",
+    "url": "https://projects.jehufrayle.com/random-quotes",
+    "imageURL": "https://serokell.io/files/0u/0ufu1q21.js-ts.jpg",
+    "description": "Queria hacer esto",
+    "technologies": ["TypeScript", "Angular"]
 }]

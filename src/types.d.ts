@@ -1,6 +1,8 @@
 type project = {
     name: string,
+    url: string,
     imageURL: string,
     description: string,
-    technologies: ('HTML' | 'CSS' | 'JavaScript' | 'React' | 'NodeJS' | 'VueJS' | 'TypeScript' | 'Webpack')[]
+    technologies: technologies[]
 }
+type technologies = 'HTML' | 'CSS' | 'JavaScript' | 'React' | 'NodeJS' | 'VueJS' | 'TypeScript' | 'Webpack';

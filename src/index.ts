@@ -1,8 +1,9 @@
 import { cardGenerator } from "./cardGenerator";
 import './styles/tailwind.css';
+import './styles/fonts.css'
 
 const ejemploProyecto: project[] = require('../proyecto.json');
-const mainContainer = document.getElementById('Projects');
+const mainContainer = document.getElementById('ProjectsTS');
 
 mainContainer
     ? ejemploProyecto.forEach(item => cardGenerator(item, mainContainer)) : null;

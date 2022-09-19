@@ -12,3 +12,15 @@
     font-family: 'Texto';
     src: url('./fonts/Marcellus-Texto.ttf') format('truetype');
 }
+
+html {
+    font-family: 'Texto';
+}
+
+h1 {
+    font-family: 'Titulo';
+}
+
+h2 {
+    font-family: 'Subtitulo';
+}
