@@ -37,6 +37,11 @@ const config = {
       {
         test: /\.(png|svg|jpg|gif)$/,
         type: 'asset'
+      },
+      {
+        test: /\.pdf$/,
+        loader: 'file-loader',
+        options: { name: '[name].[ext]', outputPath: './assets/images/' }
       }
     ]
   },

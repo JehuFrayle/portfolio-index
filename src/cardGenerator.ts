@@ -1,6 +1,7 @@
 export function cardGenerator(project: project, container: HTMLElement) {
     const cardContainer = document.createElement('a');
     cardContainer.href = project.url;
+    cardContainer.target = 'about:blank'
     cardContainer.style.backgroundImage = `url(${project.imageURL})`
     cardContainer.className = `flex flex-col p-4 rounded-lg w-full md:w-1/3 lg:w-1/4 aspect-[3/4] justify-end m-4 bg-cover bg-no-repeat bg-center
     space-y-4 drop-shadow-md hover:scale-110 transition duration-1000 ease-in-out`
@@ -12,7 +13,7 @@ export function cardGenerator(project: project, container: HTMLElement) {
     
 
     const projectDesc = document.createElement('p');
-    projectDesc.className = 'ml-auto';
+    projectDesc.className = 'text-right';
     projectDesc.innerHTML = project.description;
     cardContainer.appendChild(projectDesc);
 

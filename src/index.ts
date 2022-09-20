@@ -1,6 +1,7 @@
 import { cardGenerator } from "./cardGenerator";
 import './styles/tailwind.css';
-import './styles/fonts.css'
+import './styles/fonts.css';
+import './styles/animation.css';
 
 const ejemploProyecto: project[] = require('../proyecto.json');
 const mainContainer = document.getElementById('ProjectsTS');
@@ -16,6 +17,6 @@ burger?.addEventListener('click',()=>{
 nav?.addEventListener('click', (event)=>{
     const anchor = event.target;
      if(anchor instanceof Element && anchor.localName === 'a'){
-         nav?.classList.toggle('hidden')
+         nav?.classList.add('hidden')
      }
 })

@@ -9,8 +9,9 @@
 </head>
 
 <body class="bg-gradient-to-r from-violet-900 to-purple-900 text-slate-100">
-    <header class="w-full h-auto bg-gradient-to-r from-violet-800 to-purple-800 px-2 flex justify-between fixed top-0 z-10">
-        <a href="https:jehufrayle.com" class="h-full my-auto p-2 bg-slate-800">Jehú Frayle</a>
+    <header
+        class="w-full h-auto bg-gradient-to-r from-violet-800 to-purple-800 px-2 flex justify-between fixed top-0 z-10">
+        <a href="https:jehufrayle.com" class="h-full my-auto p-2">Jehú Frayle</a>
         <nav id="NavBar" class="lg:flex lg:w-auto lg:static lg:flex-row lg:bg-transparent lg:text-inherit lg:p-0
          backdrop-blur-sm bg-white/30 p-2 text-slate-900 rounded-sm divide-y divide-slate-800 divide-dotted lg:divide-none flex-col fixed top-16 left-16 align-center 
          w-2/3 text-center hidden">
@@ -28,7 +29,7 @@
     <main class="mt-8 mx-4 lg:mx-8">
         <section id="Home" class="flex flex-col justify-around w-full h-auto text-center p-4 pt-10 md:flex-row">
 
-            <div class="relative w-32 h-32 lg:w-64 lg:h-64 mx-auto my-2">
+            <div id="Avatar" class="relative w-32 h-32 lg:w-64 lg:h-64 mx-auto my-2">
                 <div class="absolute w-full h-full inset-0 rounded-full bg-sky-500 blur-md"></div>
                 <img src="<%=require('../src/assets/-1_orig.jpg')%>" alt="Jehú Frayle"
                     class="relative w-full h-full rounded-full outline outline-sky-500 outline-offset-2" />
@@ -40,24 +41,25 @@
                 </p>
             </div>
         </section>
-        <hr class="">
+        <hr>
         <section id="About" class="text-md mx-auto space-y-4 p-4 pt-8">
             <h2 class="text-xl text-center my-2">About me</h2>
-            <p>I am Jehú Frayle, an IT Student with proficiency in web development.</p>
+            <p>I am Jehú Frayle, an IT Student with proficiency in web development. I'm building reliable, functional
+                and fully responsive websites and applications.
+            </p>
             <p>I build functional and reliable websites and applications using technologies as TypeScript, Reactjs and
-                Webpack.
-                And, of course, I can use the main languages of the web HTML, CSS and JavaScript in their latest
-                versions.
+                Webpack. And, of course, I can use the main languages of the web HTML, CSS and JavaScript in their
+                latest versions.
             </p>
             <p>I'm currently looking for an opportunity to work in challenging projects to improve my skills
                 and contribute to a team.
             </p>
             <p>Are you interested in work with me?</p>
-            <button type="button"
-                class="block rounded-lg bg-yellow-600 p-2 mx-auto my-4 justify-center shadow-md shadow-yellow-400/40
-                hover:scale-125 transition duration-400 ease-in-out">Let's
-                talk!
-            </button>
+            <a href="<%=require('../src/assets/JehuFrayle.pdf').default %>" download="JehuFrayle.pdf"
+                class="block w-40 rounded-lg bg-yellow-600 p-2 px-4 my-4 mx-auto text-center font-['Subtitulos'] shadow-md shadow-yellow-400/40
+                hover:scale-125 transition duration-400 ease-in-out">
+                Download my CV
+            </a>
         </section>
         <section id="Projects" class="p-2 pt-8 space-y-4">
             <h2 class="text-xl text-center my-2">Projects</h2>
@@ -71,7 +73,7 @@
             <div class="flex w-full justify-evenly">
                 <a href="https://github.com/JehuFrayle" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        style="fill: azure;">
+                        class="fill-slate-100 hover:fill-slate-400">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z">
                         </path>
@@ -79,7 +81,7 @@
                 </a>
                 <a href="https://www.linkedin.com/in/jehu-frayle/" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        style="fill: azure;">
+                        class="fill-slate-100 hover:fill-slate-400">
                         <path
                             d="M20 3H4a1 1 0 0 0-1 1v16a1 1 0 0 0 1 1h16a1 1 0 0 0 1-1V4a1 1 0 0 0-1-1zM8.339 18.337H5.667v-8.59h2.672v8.59zM7.003 8.574a1.548 1.548 0 1 1 0-3.096 1.548 1.548 0 0 1 0 3.096zm11.335 9.763h-2.669V14.16c0-.996-.018-2.277-1.388-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248h-2.667v-8.59h2.56v1.174h.037c.355-.675 1.227-1.387 2.524-1.387 2.704 0 3.203 1.778 3.203 4.092v4.71z">
                         </path>
@@ -95,7 +97,7 @@
                 </a> -->
                 <a href="https://twitter.com/JehuFrayle" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
-                        style="fill: azure;">
+                        class="fill-slate-100 hover:fill-slate-400">
                         <path
                             d="M19.633 7.997c.013.175.013.349.013.523 0 5.325-4.053 11.461-11.46 11.461-2.282 0-4.402-.661-6.186-1.809.324.037.636.05.973.05a8.07 8.07 0 0 0 5.001-1.721 4.036 4.036 0 0 1-3.767-2.793c.249.037.499.062.761.062.361 0 .724-.05 1.061-.137a4.027 4.027 0 0 1-3.23-3.953v-.05c.537.299 1.16.486 1.82.511a4.022 4.022 0 0 1-1.796-3.354c0-.748.199-1.434.548-2.032a11.457 11.457 0 0 0 8.306 4.215c-.062-.3-.1-.611-.1-.923a4.026 4.026 0 0 1 4.028-4.028c1.16 0 2.207.486 2.943 1.272a7.957 7.957 0 0 0 2.556-.973 4.02 4.02 0 0 1-1.771 2.22 8.073 8.073 0 0 0 2.319-.624 8.645 8.645 0 0 1-2.019 2.083z">
                         </path>
@@ -104,7 +106,7 @@
             </div>
         </section>
     </main>
-    <footer class="w-full text-center mt-4 mb-2">Made with love by<a href="https://jehufrayle.com"> Jehú </a>💜</footer>
+    <footer class="w-full text-center my-4">Made with love by<a href="https://jehufrayle.com"> Jehú </a>💜</footer>
 </body>
 
 </html>
