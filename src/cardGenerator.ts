@@ -1,4 +1,6 @@
-import './styles/cardFlip.css'
+import './styles/cardFlip.css';
+import { usedTechGenerator } from './usedTechsGenerator';
+
 export function cardGenerator(project: project, container: HTMLElement) {
     const cardContainer = document.createElement('article');
     cardContainer.className = `contFlip flex relative m-4 w-full md:w-1/3 lg:w-1/4 aspect-[3/4] j
@@ -6,19 +8,19 @@ export function cardGenerator(project: project, container: HTMLElement) {
     //front-face
     const front = document.createElement('div');
     front.style.backgroundImage = `url(${project.imageURL})`
-    front.className = `frontFlip absolute w-full h-full rounded-lg bg-cover bg-no-repeat bg-center`
+    front.className = `frontFlip absolute flex-col w-full h-full rounded-lg bg-cover bg-no-repeat bg-start`
 
     //back-face
     const back = document.createElement('div');
     back.className = `backFlip absolute w-full h-full px-8 mx-auto rounded-lg bg-slate-300 flex flex-col justify-evenly align-center`
     const projectTitle = document.createElement('h3');
     projectTitle.innerHTML = project.name;
-    projectTitle.className = 'text-center align-start text-slate-800';
+    projectTitle.className = 'text-center font-bold align-start text-slate-800';
     back.appendChild(projectTitle);
 
     const projectIMG = document.createElement('img');
     projectIMG.src = `https://upload.wikimedia.org/wikipedia/commons/thumb/b/b6/Image_created_with_a_mobile_phone.png/640px-Image_created_with_a_mobile_phone.png`;
-    projectIMG.className = `w-3/4 mx-auto`;
+    projectIMG.className = `w-3/4 mx-auto rounded-sm`;
     back.appendChild(projectIMG);
 
     const projectDesc = document.createElement('p');
@@ -35,32 +37,15 @@ export function cardGenerator(project: project, container: HTMLElement) {
     back.appendChild(tryIt);
 
     const techContainer = document.createElement('div');
-    techContainer.className = 'w-full inline-flex ml-auto space-evenly p-2 rounded-md space-x-4 justify-end';
+    techContainer.className = 'w-full inline-flex space-evenly p-2 rounded-md space-x-4 justify-end align-end';
 
-    project.technologies.forEach((item) => {
-        const usedTech = document.createElement('p');
-        const bgColor = {
-            'HTML': '#FF5722', 
-            'CSS': '#214CE5', 
-            'JavaScript': '#F7E018', 
-            'React': '#61DBFB', 
-            'NodeJS': '#6DA25E', 
-            'VueJS': '#3FB984', 
-            'TypeScript': '#2D79C7', 
-            'Webpack': '#1C78C0',
-            'Tailwind': "#47B1B5"
-        }
-
-        usedTech.innerText = item;
-        usedTech.className = 'inline-block p-2 border-solid rounded-sm text-slate-900';
-        usedTech.style.backgroundColor = bgColor[item] || 'transparent';
-
-        techContainer.appendChild(usedTech);
-    })
+    project.technologies.forEach((item)=> usedTechGenerator(item, techContainer))
     front.appendChild(techContainer);
 
     cardContainer.appendChild(front);
     cardContainer.appendChild(back);
+
+    //Flip with click
     
     container.appendChild(cardContainer);
 }
