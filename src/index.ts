@@ -1,9 +1,9 @@
 import { cardGenerator } from "./cardGenerator";
 import './styles/tailwind.css';
 import './styles/fonts.css';
-import './styles/animation.css';
+import './styles/avatarAnimation.css';
 
-const ejemploProyecto: project[] = require('../proyecto.json');
+const ejemploProyecto: project[] = require('../proyectos.json');
 const mainContainer = document.getElementById('ProjectsTS');
 
 mainContainer

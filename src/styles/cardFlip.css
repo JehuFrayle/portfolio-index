@@ -1,0 +1,16 @@
+.contFlip div{
+    backface-visibility: hidden;
+    transition: .5s ease-in-out;
+}
+.frontFlip{
+    transform: perspective(700px) rotateY(0deg);
+}
+.backFlip{
+    transform: perspective(700px) rotateY(180deg);
+}
+.contFlip:hover .backFlip{
+    transform: perspective(700px) rotateY(360deg);
+}
+.contFlip:hover .frontFlip{
+    transform: perspective(700px) rotateY(180deg);
+}

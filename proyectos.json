@@ -1,0 +1,35 @@
+[{
+    "name": "This person didn't say that",
+    "url": "https://projects.jehufrayle.com/random-quotes",
+    "imageURL": "https://projects.jehufrayle.com/resources/images/quotes.jpg",
+    "description": "A micro project of random quotes made with Reactjs.",
+    "technologies": ["JavaScript", "React"]
+},
+{
+    "name": "Fox-generator",
+    "url": "https://projects.jehufrayle.com/fox-generator/public/",
+    "imageURL": "https://projects.jehufrayle.com/resources/images/fox.jpg",
+    "description": "Get random foxes and make your favorite collection with this application.",
+    "technologies": ["HTML", "JavaScript"]
+},
+{
+    "name": "Card Project",
+    "url": "https://projects.jehufrayle.com/card-project",
+    "imageURL": "https://projects.jehufrayle.com/resources/images/card.jpg",
+    "description": "Frontend mentor challenge. A simple user card.",
+    "technologies": ["HTML", "CSS"]
+},
+{
+    "name": "Rock, paper, scissors!",
+    "url": "https://projects.jehufrayle.com/rock-paper-scissors",
+    "imageURL": "https://projects.jehufrayle.com/resources/images/rock.jpg",
+    "description": "CPU-vs Rock-paper-scissors game.",
+    "technologies": ["JavaScript"]
+},
+{
+    "name": "Portfolio",
+    "url": "https://projects.jehufrayle.com",
+    "imageURL": "https://serokell.io/files/0u/0ufu1q21.js-ts.jpg",
+    "description": "This portfolio you are watching.",
+    "technologies": ["TypeScript", "Tailwind"]
+}]
