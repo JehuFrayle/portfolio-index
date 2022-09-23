@@ -11,6 +11,8 @@
         "allowJs": true,
     },
     "include": [
-        "./src/*"
+        "src/*",
+        "src/components/*",
+        "src/types.d.ts"
     ]
 }

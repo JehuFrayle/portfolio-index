@@ -1,35 +1,40 @@
 [{
     "name": "This person didn't say that",
     "url": "https://projects.jehufrayle.com/random-quotes",
-    "imageURL": "https://projects.jehufrayle.com/resources/images/quotes.jpg",
+    "mobileImageURL": "https://projects.jehufrayle.com/resources/images/ssquotes-mobile.jpg",
+    "desktopImageURL": "https://projects.jehufrayle.com/resources/images/ssquotes-desktop.jpg",
     "description": "A micro project of random quotes made with Reactjs.",
     "technologies": ["JavaScript", "React"]
 },
 {
     "name": "Fox-generator",
     "url": "https://projects.jehufrayle.com/fox-generator/public/",
-    "imageURL": "https://projects.jehufrayle.com/resources/images/fox.jpg",
+    "mobileImageURL": "https://projects.jehufrayle.com/resources/images/ssfox-mobile.jpg",
+    "desktopImageURL": "https://projects.jehufrayle.com/resources/images/ssfox-desktop.jpg",
     "description": "Get random foxes and make your favorite collection with this application.",
     "technologies": ["HTML", "JavaScript"]
 },
 {
     "name": "Card Project",
     "url": "https://projects.jehufrayle.com/card-project",
-    "imageURL": "https://projects.jehufrayle.com/resources/images/card.jpg",
+    "mobileImageURL": "https://projects.jehufrayle.com/resources/images/sscard-mobile.jpg",
+    "desktopImageURL": "https://projects.jehufrayle.com/resources/images/sscard-desktop.jpg",
     "description": "Frontend mentor challenge. A simple user card.",
     "technologies": ["HTML", "CSS"]
 },
 {
     "name": "Rock, paper, scissors!",
     "url": "https://projects.jehufrayle.com/rock-paper-scissors",
-    "imageURL": "https://projects.jehufrayle.com/resources/images/rock.jpg",
+    "mobileImageURL": "https://projects.jehufrayle.com/resources/images/ssrock-mobile.jpg",
+    "desktopImageURL": "https://projects.jehufrayle.com/resources/images/ssrock-desktop.jpg",
     "description": "CPU-vs Rock-paper-scissors game.",
     "technologies": ["JavaScript"]
 },
 {
     "name": "Portfolio",
     "url": "https://projects.jehufrayle.com",
-    "imageURL": "https://serokell.io/files/0u/0ufu1q21.js-ts.jpg",
-    "description": "This portfolio you are watching.",
+    "mobileImageURL": "https://projects.jehufrayle.com/resources/images/ssportfolio-mobile.jpg",
+    "desktopImageURL": "https://projects.jehufrayle.com/resources/images/ssportfolio-desktop.jpg",
+    "description": "This portfolio you are watching at.",
     "technologies": ["TypeScript", "Tailwind"]
 }]

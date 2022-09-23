@@ -1,13 +1,13 @@
-import { cardGenerator } from "./cardGenerator";
+import { cardGenerator } from "./components/cardGenerator";
 import './styles/tailwind.css';
 import './styles/fonts.css';
 import './styles/avatarAnimation.css';
 
 const ejemploProyecto: project[] = require('../proyectos.json');
-const mainContainer = document.getElementById('ProjectsTS');
+const projectContainer = document.getElementById('ProjectsTS');
 
-mainContainer
-    ? ejemploProyecto.forEach(item => cardGenerator(item, mainContainer)) : null;
+projectContainer
+    ? ejemploProyecto.forEach(item => cardGenerator(item, projectContainer)) : null;
 
 const burger = document.querySelector("#burger");
 const nav = document.querySelector('#NavBar');

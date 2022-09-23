@@ -13,7 +13,7 @@ export function usedTechGenerator(item:technologies, container:HTMLElement) {
     }
 
     usedTech.innerText = item;
-    usedTech.className = 'inline-block p-2 border-solid rounded-sm text-slate-900';
+    usedTech.className = 'inline-block p-2 border-solid rounded-sm text-slate-900 drop-shadow-sm';
     usedTech.style.backgroundColor = bgColor[item] || 'transparent';
 
     container.appendChild(usedTech);

@@ -1,7 +1,8 @@
 type project = {
     name: string,
     url: string,
-    imageURL: string,
+    mobileImageURL: string,
+    desktopImageURL: string,
     description: string,
     technologies: technologies[]
 }
