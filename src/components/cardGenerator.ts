@@ -9,12 +9,12 @@ export function cardGenerator(project: project, container: HTMLElement) {
     const front = document.createElement('div');
     front.style.backgroundImage = `url(${project.mobileImageURL})`
     front.className = `frontFlip absolute flex-col-reversed w-full h-full p-4 rounded-lg bg-cover bg-no-repeat bg-start
-    outline outline-1 outline-offset-[-3px]`;
+    outline outline-1`;
 
     //back-face
     const back = document.createElement('div');
     back.className = `backFlip absolute w-full h-full px-8 mx-auto rounded-lg backdrop-blur-sm bg-white/30 flex flex-col justify-evenly align-center
-    outline outline-1 outline-offset-[-3px]`
+    outline outline-1`
     const projectTitle = document.createElement('h3');
     projectTitle.innerHTML = project.name;
     projectTitle.className = 'text-center font-bold align-start text-slate-800';
@@ -31,9 +31,9 @@ export function cardGenerator(project: project, container: HTMLElement) {
     back.appendChild(projectDesc);
 
     const tryIt = document.createElement('a');
-    tryIt.innerHTML = 'Try it now!'
+    tryIt.innerHTML = 'Try it now!';
     tryIt.href = project.url;
-    tryIt.target = '_blank'
+    tryIt.target = '_blank';
     tryIt.className = `bg-yellow-500 w-auto mx-auto rounded-md p-2 shadow-md shadow-yellow-500/50
     hover:scale-125 transition duration-400 ease-in-out`
     back.appendChild(tryIt);

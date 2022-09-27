@@ -7,3 +7,9 @@ type project = {
     technologies: technologies[]
 }
 type technologies = 'HTML' | 'CSS' | 'JavaScript' | 'React' | 'NodeJS' | 'VueJS' | 'TypeScript' | 'Webpack';
+type referent = {
+    name: string,
+    URL: string,
+    imgURL: string,
+    reason: string
+}

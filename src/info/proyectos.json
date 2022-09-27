@@ -3,7 +3,7 @@
     "url": "https://projects.jehufrayle.com/random-quotes",
     "mobileImageURL": "https://projects.jehufrayle.com/resources/images/ssquotes-mobile.jpg",
     "desktopImageURL": "https://projects.jehufrayle.com/resources/images/ssquotes-desktop.jpg",
-    "description": "A micro project of random quotes made with Reactjs.",
+    "description": "You'll never find a real quote on the Internet, so why to care about who say what? This app was made with React.",
     "technologies": ["JavaScript", "React"]
 },
 {
@@ -15,11 +15,11 @@
     "technologies": ["HTML", "JavaScript"]
 },
 {
-    "name": "Card Project",
+    "name": "User card Project",
     "url": "https://projects.jehufrayle.com/card-project",
     "mobileImageURL": "https://projects.jehufrayle.com/resources/images/sscard-mobile.jpg",
     "desktopImageURL": "https://projects.jehufrayle.com/resources/images/sscard-desktop.jpg",
-    "description": "Frontend mentor challenge. A simple user card.",
+    "description": "Frontend mentor challenge. Ideal for like any social network.",
     "technologies": ["HTML", "CSS"]
 },
 {
@@ -27,7 +27,7 @@
     "url": "https://projects.jehufrayle.com/rock-paper-scissors",
     "mobileImageURL": "https://projects.jehufrayle.com/resources/images/ssrock-mobile.jpg",
     "desktopImageURL": "https://projects.jehufrayle.com/resources/images/ssrock-desktop.jpg",
-    "description": "CPU-vs Rock-paper-scissors game.",
+    "description": "Play Rock-Paper-Scissors against the CPU. A little game I made when learning JavaScript",
     "technologies": ["JavaScript"]
 },
 {
@@ -35,6 +35,6 @@
     "url": "https://projects.jehufrayle.com",
     "mobileImageURL": "https://projects.jehufrayle.com/resources/images/ssportfolio-mobile.jpg",
     "desktopImageURL": "https://projects.jehufrayle.com/resources/images/ssportfolio-desktop.jpg",
-    "description": "This portfolio you are watching at.",
+    "description": "This portfolio you are watching at. Do you like it?",
     "technologies": ["TypeScript", "Tailwind"]
 }]
