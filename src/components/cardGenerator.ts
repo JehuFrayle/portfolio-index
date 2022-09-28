@@ -8,8 +8,7 @@ export function cardGenerator(project: project, container: HTMLElement) {
     //front-face
     const front = document.createElement('div');
     front.style.backgroundImage = `url(${project.mobileImageURL})`
-    front.className = `frontFlip absolute flex-col-reversed w-full h-full p-4 rounded-lg bg-cover bg-no-repeat bg-start
-    outline outline-1`;
+    front.className = `frontFlip absolute flex-col-reversed w-full h-full p-4 rounded-lg bg-cover bg-no-repeat bg-start`;
 
     //back-face
     const back = document.createElement('div');
