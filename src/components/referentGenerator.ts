@@ -2,9 +2,8 @@ export function referentGenerator(person:referent, container:HTMLElement){
     const referentContainer = document.createElement('a');
     referentContainer.href = person.URL;
     referentContainer.target = '_blank';
-    referentContainer.className = `rounded-lg bg-gradient-to-t from-indigo-400 to-violet-400 flex flex-col justify-between w-48 h-auto p-4 m-4 
-    drop-shadow-md text-center space-y-2 shrink-0 snap-center
-    hover:scale-105 hover:drop-shadow-lg transition duration-500 ease-in-out`;
+    referentContainer.className = `hideTS rounded-lg bg-gradient-to-t from-indigo-400 to-violet-400 flex flex-col justify-between w-48 h-auto p-4 m-4 
+    drop-shadow-md text-center space-y-2 shrink-0 snap-center`;
 
     const referentAvatar = document.createElement('img');
     referentAvatar.src = person.imgURL;

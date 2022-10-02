@@ -1,0 +1,65 @@
+.hideTS {
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(-50%);
+}
+.revealTS {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+#Projects .hideTS{
+    opacity: 0;
+    filter: blur(10px);
+    transform: translateX(50%);
+}
+#Projects .revealTS {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+    transition: all 2s;
+}
+#Contact .hideTS {
+    opacity: 0;
+    filter: blur(5px);
+    transform: scale(50%);
+}
+#Contact .revealTS {
+    opacity: 1;
+    filter: blur(0);
+    transform: scale(100%);
+    transition: all 2s;
+}
+#Referents a.hideTS{
+    opacity: 0;
+    filter: blur(5px);
+    transition: all 2s;
+}
+#Referents a.revealTS{
+    opacity: 1;
+    filter: blur(0);
+    transition: all 2s;
+}
+#Referents > div a:nth-child(2) {
+    transition-delay: 150ms;
+}
+#Referents > div a:nth-child(3) {
+    transition-delay: 300ms;
+}
+#Referents > div a:nth-child(4) {
+    transition-delay: 450ms;
+}
+#Referents > div a:nth-child(5) {
+    transition-delay: 600ms;
+}
+#Referents > div a:hover {
+    transform: scale(105%);
+    transition: 500ms;
+}
+
+@media(prefers-reduced-motion){
+    .hideTS {
+        transition: none !important;
+    }
+}
