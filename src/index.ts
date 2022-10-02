@@ -1,7 +1,6 @@
 import { cardGenerator } from "./components/cardGenerator";
 import './styles/tailwind.css';
 import './styles/fonts.css';
-import './styles/avatarAnimation.css';
 import { referentGenerator } from "./components/referentGenerator";
 
 //Esto es para rellenar la seccion de proyectos

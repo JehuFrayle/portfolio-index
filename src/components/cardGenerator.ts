@@ -4,7 +4,7 @@ import { usedTechGenerator } from './usedTechsGenerator';
 export function cardGenerator(project: project, container: HTMLElement) {
     const cardContainer = document.createElement('article');
     cardContainer.className = `contFlip flex relative m-4 w-full md:w-1/3 lg:w-1/4 aspect-[3/4]
-    drop-shadow-md transition duration-1000 ease-in-out`
+    drop-shadow-md`
     //front-face
     const front = document.createElement('div');
     front.style.backgroundImage = `url(${project.mobileImageURL})`
@@ -33,7 +33,7 @@ export function cardGenerator(project: project, container: HTMLElement) {
     tryIt.innerHTML = 'Try it now!';
     tryIt.href = project.url;
     tryIt.target = '_blank';
-    tryIt.className = `bg-yellow-500 w-auto mx-auto rounded-md p-2 shadow-md shadow-yellow-500/50
+    tryIt.className = `bg-yellow-500 w-auto mx-auto rounded-md p-2 shadow-md
     hover:scale-125 transition duration-400 ease-in-out`
     back.appendChild(tryIt);
 

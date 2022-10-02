@@ -1,3 +1,6 @@
+/* This animation is no longer necessary since I'm now using tailwind animation.
+    Everything about this animation is now at tailwind.config.js 
+*/
 @keyframes float {
     0% {
         box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
@@ -21,4 +24,9 @@
     box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
     transform: translatey(0px);
     animation: float 6s ease-in-out infinite;
+}
+@media(prefers-reduce-motion){
+    #Avatar{
+        animation: none;
+    }
 }
