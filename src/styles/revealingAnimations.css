@@ -63,3 +63,8 @@
         transition: none !important;
     }
 }
+@media (max-width: 1250px) {
+    #Referents > div a {
+        transition: none !important;
+    }
+}

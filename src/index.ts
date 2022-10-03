@@ -30,7 +30,7 @@ nav?.addEventListener('click', (event) => {
         nav?.classList.add('hidden')
     }
 })
-// This is for the revealin animation 
+// This is for the revealing animation 
 const observer = new IntersectionObserver((entries) => {
     entries.forEach( (entry) => {
         if (entry.isIntersecting){
