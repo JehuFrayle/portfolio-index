@@ -6,7 +6,7 @@ type project = {
     description: string,
     technologies: technologies[]
 }
-type technologies = 'HTML' | 'CSS' | 'JavaScript' | 'React' | 'NodeJS' | 'VueJS' | 'TypeScript' | 'Webpack';
+type technologies = 'HTML' | 'CSS' | 'JavaScript' | 'React' | 'NodeJS' | 'VueJS' | 'TypeScript' | 'Webpack' | 'Angular' | 'Tailwind';
 type referent = {
     name: string,
     URL: string,

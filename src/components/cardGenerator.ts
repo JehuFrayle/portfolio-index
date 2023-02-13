@@ -29,24 +29,26 @@ export function cardGenerator(project: project, container: HTMLElement) {
     projectDesc.innerHTML = project.description;
     back.appendChild(projectDesc);
 
-    const tryIt = document.createElement('a');
-    tryIt.innerHTML = 'Try it now!';
-    tryIt.href = project.url;
-    tryIt.target = '_blank';
-    tryIt.className = `bg-yellow-500 w-auto mx-auto rounded-md p-2 shadow-md
-    hover:scale-125 transition duration-400 ease-in-out`
-    back.appendChild(tryIt);
+    if (project.url) {
+        const tryIt = document.createElement('a');
+        tryIt.innerHTML = 'Try it now!';
+        tryIt.href = project.url;
+        tryIt.target = '_blank';
+        tryIt.className = `bg-yellow-500 w-auto mx-auto rounded-md p-2 shadow-md
+        hover:scale-125 transition duration-400 ease-in-out`
+        back.appendChild(tryIt);
+    }
 
     const techContainer = document.createElement('div');
     techContainer.className = 'w-full inline-flex space-evenly space-x-4 font-[Subtitulos]';
 
-    project.technologies.forEach((item)=> usedTechGenerator(item, techContainer))
+    project.technologies.forEach((item) => usedTechGenerator(item, techContainer))
     front.appendChild(techContainer);
 
     cardContainer.appendChild(front);
     cardContainer.appendChild(back);
 
     //Flip with click
-    
+
     container.appendChild(cardContainer);
 }
