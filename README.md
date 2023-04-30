@@ -41,5 +41,6 @@ Maybe I should be more specific about types...
 - Entry transitions (called revealingAnimations on the project) are causing overflow and making the site wider. ✅
 - Referents transition delay is causing them to fight each other. ✅
 - Social media container is not centered. ✅
+- Projects cards doesn't show the backface on Firefox. ✅
 
 ---
