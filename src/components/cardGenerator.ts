@@ -3,8 +3,7 @@ import { usedTechGenerator } from './usedTechsGenerator';
 
 export function cardGenerator(project: project, container: HTMLElement) {
     const cardContainer = document.createElement('article');
-    cardContainer.className = `contFlip flex relative m-4 w-full md:w-1/3 lg:w-1/4 aspect-[3/4]
-    drop-shadow-md`
+    cardContainer.className = `contFlip flex relative m-4 w-full md:w-1/3 lg:w-1/4 aspect-[3/4]`
     //front-face
     const front = document.createElement('div');
     front.style.backgroundImage = `url(${project.mobileImageURL})`

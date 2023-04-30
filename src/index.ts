@@ -32,9 +32,11 @@ nav?.addEventListener('click', (event) => {
 })
 // This is for the revealing animation 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach( (entry) => {
+    entries.forEach( (entry, index) => {
         if (entry.isIntersecting){
             entry.target.classList.add('revealTS');
+            // remove observer after animation
+            observer.unobserve(entry.target);
         }
     })
 })
