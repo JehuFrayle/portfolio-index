@@ -2,7 +2,7 @@ export function referentGenerator(person:referent, container:HTMLElement){
     const referentContainer = document.createElement('a');
     referentContainer.href = person.URL;
     referentContainer.target = '_blank';
-    referentContainer.className = `hideTS rounded-lg bg-gradient-to-t from-indigo-400 to-violet-400 flex flex-col justify-between w-48 h-auto p-4 m-4 
+    referentContainer.className = `hideTS rounded-lg bg-gradient-to-t from-midnightBlue to-blueGray flex flex-col justify-between w-48 h-auto p-4 m-4 
     drop-shadow-md text-center space-y-2 shrink-0 snap-center`;
     referentContainer.innerText = person.name;
 

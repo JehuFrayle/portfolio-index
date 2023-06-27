@@ -1,11 +1,11 @@
 @font-face {
     font-family: 'Titulo';
-    src: url('./fonts/Arimo-Titulo.ttf') format('truetype');
+    src: url('./fonts/RobotoMono-Bold.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Subtitulos';
-    src: url('./fonts/PTSans-Subtitulos.ttf') format('truetype');
+    src: url('./fonts/RobotoMono-Regular.ttf') format('truetype');
 }
 
 @font-face {

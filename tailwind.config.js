@@ -21,8 +21,16 @@ module.exports = {
       },
       animation: {
         'avatar-animation': 'float 6s ease-in-out infinite',
+      },
+      colors: {
+        'mistyBlue': '#C3CEDA',
+        'blueGray': '#738FA7',
+        'midnightBlue': '#0C4160',
+        'darkBlue': '#071330',
+        'jsYellow': '#F7DF1E',
+        'tsBlue': '#3178C6',
       }
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }

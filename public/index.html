@@ -9,17 +9,17 @@
     <title>Jehú Frayle</title>
 </head>
 
-<body class="bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900 text-cyan-50">
+<body class="bg-gradient-to-r from-darkBlue via-midnightBlue to-darkBlue text-cyan-50">
     <header
-        class="w-full h-auto bg-gradient-to-r from-slate-800 via-purple-800 to-slate-800 px-2 flex justify-between fixed top-0 z-10">
+        class="w-full h-auto bg-gradient-to-r from-midnightBlue via-blueGray to-midnightBlue px-2 flex justify-between fixed top-0 z-10">
         <a href="https:jehufrayle.com" class="h-full my-auto p-2">Jehú Frayle</a>
         <nav id="NavBar" class="lg:flex lg:w-auto lg:static lg:flex-row lg:bg-transparent lg:text-inherit lg:p-0
          backdrop-blur-sm bg-white/30 p-2 text-slate-900 rounded-sm divide-y divide-slate-800 divide-dotted lg:divide-none flex-col fixed top-16 left-16 align-center 
          w-2/3 text-center hidden">
-            <a class="p-2 w-auto lg:w-32 lg:h-auto h-auto block lg:hover:bg-violet-600" href="#Home">Home</a>
-            <a class="p-2 w-auto lg:w-32 lg:h-auto h-auto block lg:hover:bg-violet-600" href="#About">About me</a>
-            <a class="p-2 w-auto lg:w-32 lg:h-auto h-auto block lg:hover:bg-violet-600" href="#Projects">Projects</a>
-            <a class="p-2 w-auto lg:w-32 lg:h-auto h-auto block lg:hover:bg-violet-600" href="#Contact">Contact</a>
+            <a class="p-2 w-auto lg:w-32 lg:h-auto h-auto block lg:hover:bg-darkBlue" href="#Home">Home</a>
+            <a class="p-2 w-auto lg:w-32 lg:h-auto h-auto block lg:hover:bg-darkBlue" href="#About">About me</a>
+            <a class="p-2 w-auto lg:w-32 lg:h-auto h-auto block lg:hover:bg-darkBlue" href="#Projects">Projects</a>
+            <a class="p-2 w-auto lg:w-32 lg:h-auto h-auto block lg:hover:bg-darkBlue" href="#Contact">Contact</a>
         </nav>
         <button id="burger" class="w-auto p-2 my-auto align-middle lg:hidden">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" style="fill: azure">
@@ -31,18 +31,18 @@
 
         <section id="Home" class="hideTS flex flex-col justify-around w-full h-auto text-center p-4 pt-10 md:flex-row border-b-[1px]">
 
-            <div id="Avatar" class="relative w-32 h-32 lg:w-64 lg:h-64 mx-auto my-2 rounded-full animate-avatar-animation">
+            <div id="Avatar" class="flex justify-center items-center relative w-32 h-32 lg:w-64 lg:h-64 mx-auto my-2 rounded-full animate-avatar-animation">
                 <div class="absolute w-full inset-0 rounded-full bg-sky-500 blur-md"></div>
                 <img src="https://projects.jehufrayle.com/public/f236339547f2d3d47e57.jpg" alt="Jehú Frayle"
-                    class="relative w-full rounded-full outline outline-sky-500 outline-offset-2t" />
+                    class="relative w-full rounded-full outline outline-sky-500 outline-offset-2" />
             </div>
             <div class="flex flex-col space-y-3 m-auto">
                 <p class="text-lg text-left">Hello there,</p>
                 <h1 class="p-4 text-7xl font-bold italic">This is <span
-                        class="pr-4 bg-clip-text text-transparent bg-gradient-to-r from-[#F7DF1E] to-[#3178C6]"><span
+                        class="pr-4 bg-clip-text text-transparent bg-gradient-to-r from-jsYellow to-tsBlue"><span
                             class="pr-2 lg:p-0">Jehú</span> Frayle</span>
                 </h1>
-                <p class="text-xl text-center tracking-widest w-full mx-auto lg:tracking-[.75rem] text-[#F7DF1E]">
+                <p class="text-xl text-center tracking-widest w-full mx-auto lg:tracking-[.75rem] text-jsYellow">
                     JavaScript Developer
                 </p>
             </div>
@@ -67,7 +67,7 @@
                 learning different disciplines, so I don’t discard working as a backend or full-stack developer in the
                 future.</p>
             <p>And that’s it. You can download my CV right below this or let me show you some of my projects.</p>
-            <a href="<%=require('../src/assets/JehuFrayle.pdf').default %>" download="JehuFrayle.pdf" class="block w-40 rounded-lg bg-yellow-600 p-2 px-4 my-4 mx-auto text-center font-['Subtitulos'] shadow-md shadow-yellow-400/40
+            <a href="<%=require('../src/assets/JehuFrayle.pdf').default %>" download="JehuFrayle.pdf" class="block w-40 rounded-lg bg-yellow-500 p-2 my-4 mx-auto text-center font-['Subtitulos'] shadow-md shadow-jsYellow/40
                 hover:scale-125 hover:translate-y-1 transition duration-400 ease-in-out">
                 Download my CV
             </a>

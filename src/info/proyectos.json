@@ -1,5 +1,16 @@
 [
     {
+        "name": "Volcadex",
+        "url": "https://volcadex.netlify.app",
+        "mobileImageURL": "https://projects.jehufrayle.com/resources/images/portfolio/ssvolcadex-mobile.webp",
+        "desktopImageURL": "https://projects.jehufrayle.com/resources/images/portfolio/ssvolcadex-desktop.webp",
+        "description": "My own implementation of a Pokédex using the PokéAPI. Built with Angular.",
+        "technologies": [
+            "TypeScript",
+            "Angular"
+        ]
+    },
+    {
         "name": "Platzi Store",
         "url": "https://merry-souffle-f86cf3.netlify.app/home",
         "mobileImageURL": "https://projects.jehufrayle.com/resources/images/portfolio/ssplatzistore-mobile.jpg",
